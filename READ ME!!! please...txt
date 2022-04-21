@@ -1,0 +1,45 @@
+READ ME!!!
+1.  Extract File
+2.  Buka file koneksi.php
+3.  Sesuaikan koneksi dengan database
+	$koneksi = mysqli_connect("localhost","root","root","kemenkeu");
+	tukar password xampp (root yang ke-2) dengan password xampp anda (default tanpa password)
+4.  Sace
+5.  Copy folder kemenkeu ke directory htdocs xampp (default : C:\xampp\htdocs)
+6.  Jalankan XAMPP Control Panel
+7.  Start Apache dan MySQL
+8.  Tekan tombol Admin pada MySQL
+9.  Tekan Import
+10. Pilih file kemenkeu.sql
+11. Tekan Go
+12. Jalankan Aplikasi (buka browser, buat localhost/kemenkeu)
+
+* Username dan Password Aplikasi = admin
+
+
+-----------------------------------------------------------------------------------
+
+
+-- Login
+1. masukkan username dan password
+2. tekan login, sistem akan mencek apakah uname dan pass sama dengan yang ada di database
+3. jika sama, login berhasil, jika beda, login gagal
+
+-- Home
+1. Landing di home, muncul pilihan tanah, aset, kendaraan, lengkap dengan opsi input dan list
+2. pilih salah satu, lalu akan melesat ke link yang telah ditentukan
+
+-- Input
+1. masukkan data yang diperlukan
+2. pilih gambar
+3. klik kirim
+4. gambar akan dipindahkan ke directory yg dibuat, lalu dimasukkan ke database sesuai query yang dibuat
+
+-- View
+1. jika data telah ada di database, maka data akan ditampilkan
+2. jika gambar null atau kosong, maka gambar tetap ditampilkan 4 buat, namun hanya gambar crash
+
+-- Print
+1. klik print untuk data yang ingin diprint
+2. sistem akan mengambil id dari data yang ingin diprint, dicocokkan dengan data yang ada, lalu dipilih hanya data tersebut
+3. print.
